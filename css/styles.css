@@ -537,7 +537,7 @@ footer .second-part-logo {
   line-height: 1.87;
 }
 
-/* --MODAL-WINDOW-- */
+                           /* --MODAL-WINDOW-- */
 .backdrop {
   position: fixed;
   top: 0;
@@ -547,13 +547,22 @@ footer .second-part-logo {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  min-width: 528px;
+  min-height: 581px;
+  padding: 8px;
+
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -563,13 +572,15 @@ footer .second-part-logo {
 
 .close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   border-radius: 50%;
   width: 30px;
   height: 30px;
+
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   color: #000000;
+  text-align: center;
 }
