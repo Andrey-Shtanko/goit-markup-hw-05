@@ -628,7 +628,11 @@ footer .second-part-logo {
 
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  color: #000000;
-  text-align: center;
+}
+
+.close-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
