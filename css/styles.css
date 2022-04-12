@@ -449,10 +449,11 @@ footer .second-part-logo {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 .social-block {
   margin-left: 70px;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 
 .social-block-title {
